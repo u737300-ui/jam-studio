@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jam Studio Photography — Every Frame. Every Story. | Rahim Yar Khan & Sadiqabad</title>
+<meta name="description" content="Jam Studio Photography (@jam_studio_official.pk) — cinematic wedding, portrait and event photography in Rahim Yar Khan & Sadiqabad, Pakistan. Every frame. Every story.">
+<meta property="og:title" content="Jam Studio Photography — Every Frame. Every Story.">
+<meta property="og:description" content="Wedding, portrait & event photography — Rahim Yar Khan & Sadiqabad. Book on WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='none' stroke='%23c8b48a' stroke-width='6'/><circle cx='50' cy='50' r='16' fill='%23c8b48a'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--bg2:#0a0a0a;--ink:#f5f3ef;--mut:#858585;--champ:#c8b48a;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--champ);color:#000}
+a{color:inherit}
+img{user-select:none;-webkit-user-drag:none}
+/* ---------- NAV ---------- */
+nav{position:fixed;inset:0 0 auto 0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:22px 4vw;mix-blend-mode:difference}
+.brand{font-weight:600;letter-spacing:.04em;font-size:19px;text-decoration:none}
+.brand small{display:block;font-size:8px;letter-spacing:.42em;color:#bbb;font-weight:400;margin-top:2px}
+.nav-mid{display:flex;gap:38px}
+.nav-mid a{font-size:10px;letter-spacing:.34em;text-decoration:none;color:#ddd;text-transform:uppercase}
+.nav-mid a:hover{color:#fff}
+.nav-r{display:flex;gap:14px;align-items:center}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.04);color:#fff;display:grid;place-items:center;cursor:pointer;font-size:15px;text-decoration:none;transition:.3s}
+.icon-btn:hover{background:#fff;color:#000}
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100svh;overflow:hidden;background:radial-gradient(1200px 700px at 78% 42%,#171512 0%,#070707 55%,#050505 100%)}
+.grid-floor{position:absolute;left:-25%;right:-25%;bottom:-12%;height:62%;transform:perspective(520px) rotateX(64deg);transform-origin:bottom;background-image:linear-gradient(rgba(255,255,255,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.13) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to top,rgba(0,0,0,.9),transparent 92%);-webkit-mask-image:linear-gradient(to top,rgba(0,0,0,.9),transparent 92%);animation:gridmove 3.2s linear infinite;opacity:.55}
+@keyframes gridmove{to{background-position:0 52px,0 52px}}
+.hero-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 38%,transparent 40%,rgba(0,0,0,.55) 100%);pointer-events:none}
+.hero-copy{position:absolute;left:4vw;bottom:9vh;z-index:5;max-width:640px}
+.kicker{font-size:10px;letter-spacing:.42em;color:#cfcfcf;text-transform:uppercase;display:flex;align-items:center;gap:14px}
+.kicker:before{content:"";width:44px;height:1px;background:var(--champ)}
+.hero-copy h1{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:clamp(52px,7.6vw,118px);line-height:.98;letter-spacing:-.015em;margin:20px 0 22px;text-shadow:0 10px 60px rgba(0,0,0,.8)}
+.hero-copy p{color:#b9b9b9;font-size:14.5px;line-height:1.75;max-width:420px;font-weight:300}
+.hero-cta{display:flex;gap:26px;align-items:center;margin-top:32px;flex-wrap:wrap}
+.btn{background:var(--ink);color:#0a0a0a;border:none;padding:17px 30px;font-size:10.5px;letter-spacing:.26em;font-weight:600;cursor:pointer;text-decoration:none;text-transform:uppercase;transition:.3s;display:inline-block}
+.btn:hover{background:var(--champ)}
+.btn-ghost{background:none;color:#e8e8e8;padding:17px 4px;border-bottom:1px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{background:none;color:var(--champ);border-color:var(--champ)}
+.hero-meta{position:absolute;right:4vw;bottom:4.5vh;z-index:5;text-align:right;font-size:9px;letter-spacing:.3em;color:#8a8a8a;text-transform:uppercase;line-height:2}
+.hero-meta b{color:#d8d8d8;font-weight:500}
+.scroll-hint{position:absolute;left:4vw;bottom:4.5vh;z-index:5;font-size:9px;letter-spacing:.3em;color:#8a8a8a;text-transform:uppercase}
+/* ---------- LENS ---------- */
+.lens-wrap{position:absolute;right:-6vw;top:50%;transform:translateY(-54%);width:min(56vw,760px);aspect-ratio:1;z-index:3;pointer-events:none;filter:drop-shadow(-40px 60px 80px rgba(0,0,0,.85))}
+.lens{position:absolute;inset:0;border-radius:50%;will-change:transform}
+.lens-body{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 34% 30%,#3d3d40,#17181a 42%,#0a0a0b 68%,#1d1e20 88%,#060606);box-shadow:inset 0 0 0 10px #101012,inset 0 0 0 13px #2c2c2f,inset 0 -30px 80px rgba(0,0,0,.9),inset 0 24px 60px rgba(255,255,255,.07)}
+.lens-ring{position:absolute;inset:7.5%;border-radius:50%;border:2px solid #333336;box-shadow:inset 0 0 0 6px #0c0c0d,inset 0 0 34px #000;background:repeating-conic-gradient(from 0deg,#26262a 0deg 2deg,#131315 2deg 4deg);opacity:.9}
+.lens-glass{position:absolute;inset:16.5%;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 38% 32%,#5a6672 0%,#232a31 26%,#0b0f13 55%,#04070a 78%,#10161c 100%);box-shadow:inset 0 0 90px rgba(0,0,0,.95),inset 0 0 18px rgba(140,180,220,.25),0 0 0 5px #08090a,0 0 0 7px #2e2e31}
+.lens-glass:before{content:"";position:absolute;inset:16%;border-radius:50%;background:conic-gradient(from 210deg,#05080b,#131a20 12%,#05080b 24%,#0d141a 38%,#05080b 52%,#131a20 66%,#05080b 80%,#0d141a 92%,#05080b);box-shadow:inset 0 0 50px #000}
+.lens-glass:after{content:"";position:absolute;inset:33%;border-radius:50%;background:radial-gradient(circle at 40% 32%,#7d8ea0 0%,#26313c 34%,#070b0f 72%);box-shadow:inset 0 0 34px #000,0 0 22px rgba(120,160,200,.14)}
+.lens-shine{position:absolute;inset:16.5%;border-radius:50%;background:linear-gradient(118deg,rgba(255,255,255,.20) 0%,rgba(255,255,255,.05) 22%,transparent 42%),radial-gradient(420px 200px at 30% 18%,rgba(255,255,255,.14),transparent 60%);mix-blend-mode:screen}
+.lens-city{position:absolute;inset:16.5%;border-radius:50%;opacity:.16;background:linear-gradient(to top,#000 30%,transparent 62%),repeating-linear-gradient(90deg,transparent 0 34px,rgba(160,190,220,.5) 34px 52px,transparent 52px 90px);mask-image:linear-gradient(to top,black 45%,transparent 78%);-webkit-mask-image:linear-gradient(to top,black 45%,transparent 78%)}
+.lens-svg{position:absolute;inset:0;transform:rotate(-8deg)}
+.lens-svg text{fill:#cfd2d4;font-size:15.5px;letter-spacing:3.5px;font-family:'Inter',sans-serif;font-weight:500}
+.lens-red{position:absolute;inset:4.2%;border-radius:50%;border:2px solid transparent;border-top-color:rgba(190,30,40,.55);transform:rotate(38deg)}
+/* ---------- REEL ---------- */
+.reel-zone{position:absolute;left:0;right:0;top:44%;height:340px;z-index:4;perspective:1100px;overflow:visible;cursor:grab;touch-action:pan-y}
+.reel-zone:active{cursor:grabbing}
+.reel-card{position:absolute;top:0;left:0;width:158px;height:212px;border-radius:7px;overflow:hidden;transform-origin:center;box-shadow:0 24px 50px rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.14);background:#111;will-change:transform,filter;cursor:pointer}
+.reel-card img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.reel-card .rc-tag{position:absolute;left:10px;bottom:9px;font-size:8px;letter-spacing:.24em;text-transform:uppercase;color:#fff;text-shadow:0 2px 10px #000;opacity:0;transition:.3s}
+.reel-card.hot .rc-tag{opacity:1}
+/* ---------- SECTIONS ---------- */
+section{position:relative}
+.wrap{padding:120px 6vw}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:54px;flex-wrap:wrap}
+.sec-head h2{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:clamp(38px,4.6vw,64px);line-height:1.05;margin-top:16px}
+.sec-head p{color:var(--mut);font-size:13px;line-height:1.8;max-width:300px;font-weight:300}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.fbtn{border:1px solid var(--line);background:none;color:#cfcfcf;padding:11px 20px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;cursor:pointer;transition:.25s;border-radius:99px}
+.fbtn:hover{border-color:#666;color:#fff}
+.fbtn.on{background:var(--ink);color:#000;border-color:var(--ink)}
+.archive-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.a-item{position:relative;overflow:hidden;border-radius:8px;cursor:zoom-in;background:#0d0d0d;min-height:280px}
+.a-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1s cubic-bezier(.2,.8,.2,1),filter .5s;filter:brightness(.88)}
+.a-item:hover img{transform:scale(1.06);filter:brightness(1.05)}
+.a-item figcaption{position:absolute;left:18px;bottom:16px;z-index:2;text-shadow:0 2px 14px #000}
+.a-item figcaption small{display:block;font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--champ);margin-bottom:5px}
+.a-item figcaption strong{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:22px}
+.a-item:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 46%)}
+.a-wide{grid-column:span 7;height:440px}.a-tall{grid-column:span 5;height:440px}.a-half{grid-column:span 6;height:380px}.a-third{grid-column:span 4;height:340px}
+/* pricing */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price-card{border:1px solid var(--line);padding:44px 34px;background:linear-gradient(180deg,#0b0b0b,#070707);display:flex;flex-direction:column;gap:16px;transition:.35s}
+.price-card:hover{border-color:rgba(200,180,138,.5);transform:translateY(-4px)}
+.price-card .ic{font-size:26px}
+.price-card h3{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:30px}
+.price-card p{color:var(--mut);font-size:13px;line-height:1.85;font-weight:300;flex:1}
+.price-card .from{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--champ)}
+.price-card .btn{text-align:center}
+/* booking */
+.book-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:6vw;align-items:start}
+.book-copy h2{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:clamp(38px,4.4vw,60px);line-height:1.08;margin:16px 0 20px}
+.book-copy p{color:var(--mut);font-size:13.5px;line-height:1.9;font-weight:300;max-width:420px}
+.steps{margin-top:34px;display:grid;gap:14px}
+.steps div{display:flex;gap:16px;align-items:baseline;color:#c9c9c9;font-size:13px}
+.steps b{color:var(--champ);font-family:'Playfair Display',serif;font-style:italic;font-size:19px}
+form{display:grid;gap:14px}
+label{font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:#9a9a9a;display:grid;gap:8px}
+input,select,textarea{background:#0c0c0c;border:1px solid var(--line);color:var(--ink);padding:15px 16px;font:400 14px 'Inter',sans-serif;border-radius:4px;width:100%}
+input:focus,select:focus,textarea:focus{outline:1px solid var(--champ);border-color:var(--champ)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-note{font-size:11px;color:#777;line-height:1.7}
+/* finale */
+.finale{padding:150px 6vw 90px;text-align:center;background:radial-gradient(900px 480px at 50% 110%,#1a1610 0%,#050505 62%)}
+.finale h2{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:clamp(44px,7vw,96px);line-height:1.04;max-width:1000px;margin:22px auto}
+.finale p{color:var(--mut);font-size:15px;font-weight:300}
+.finale .row{display:flex;gap:16px;justify-content:center;margin-top:38px;flex-wrap:wrap}
+footer{padding:30px 6vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#6f6f6f;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase}
+footer a{color:#aaa;text-decoration:none}footer a:hover{color:#fff}
+/* lightbox */
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(3,3,3,.96);display:none;align-items:center;justify-content:center;flex-direction:column;padding:4vh 4vw}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(92vw,1100px);max-height:78vh;object-fit:contain;box-shadow:0 40px 120px #000;border-radius:6px;animation:lbIn .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes lbIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.lb-cap{margin-top:20px;text-align:center}
+.lb-cap small{font-size:9px;letter-spacing:.32em;text-transform:uppercase;color:var(--champ);display:block;margin-bottom:6px}
+.lb-cap strong{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:26px}
+.lb-close{position:absolute;top:22px;right:26px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:none;color:#fff;font-size:17px;cursor:pointer}
+.lb-close:hover{background:#fff;color:#000}
+.lb-wa{margin-top:16px}
+/* reveal */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:900px){
+ .nav-mid{display:none}
+ .lens-wrap{width:92vw;right:-30vw;top:36%;opacity:.92}
+ .hero-copy{bottom:7vh;right:6vw}
+ .reel-zone{top:40%;height:250px}
+ .reel-card{width:118px;height:158px}
+ .archive-grid>*{grid-column:span 12 !important;height:320px}
+ .price-grid,.book-grid{grid-template-columns:1fr}
+ .frow{grid-template-columns:1fr}
+ .scroll-hint{display:none}
+ .hero-meta{bottom:auto;top:96px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="#top">Jam Studio<small>PHOTOGRAPHY · PAKISTAN</small></a>
+  <div class="nav-mid"><a href="#gallery">Gallery</a><a href="#archive">Archive</a><a href="#pricing">Pricing</a><a href="#book">Book</a></div>
+  <div class="nav-r">
+    <button class="icon-btn" id="ambientBtn" title="Toggle ambient light" aria-label="Toggle ambient light">☀</button>
+    <a class="icon-btn" href="https://www.instagram.com/jam_studio_official.pk/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">◎</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="grid-floor"></div>
+  <div class="lens-wrap" id="lensWrap" aria-hidden="true">
+    <div class="lens" id="lens">
+      <div class="lens-body"></div><div class="lens-red"></div><div class="lens-ring"></div>
+      <svg class="lens-svg" viewBox="0 0 400 400"><defs><path id="tp" d="M200,200 m-168,0 a168,168 0 1,1 336,0 a168,168 0 1,1 -336,0"/></defs>
+      <text><textPath href="#tp">24 – 105mm &nbsp; 1:4 &nbsp; L &nbsp; · &nbsp; ø77mm &nbsp; · &nbsp; JAM STUDIO &nbsp; · &nbsp; EF LENS &nbsp; ·</textPath></text></svg>
+      <div class="lens-glass"></div><div class="lens-city"></div><div class="lens-shine"></div>
+    </div>
+  </div>
+
+  <div class="reel-zone" id="reelZone" aria-label="Infinite photography reel — hover to focus, click to view"></div>
+
+  <div class="hero-copy">
+    <div class="kicker">Selected Work 2018 — 2026</div>
+    <h1>Every frame.<br>Every story.</h1>
+    <p id="heroBio">Wedding, portrait and event photography from Rahim Yar Khan &amp; Sadiqabad — twelve years of editorial, celebration and brand stories, told one infinite reel at a time. Hover to feel it, click to see it full.</p>
+    <div class="hero-cta">
+      <a class="btn" data-wa data-wa-text="Hi Jam Studio, I'd like to book a photography session. Please share your availability." target="_blank" rel="noopener">Book a Session</a>
+      <a class="btn btn-ghost" href="#archive">View Archive ↓</a>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll or drag to explore</div>
+  <div class="hero-meta">Featured in — <b>Weddings · Portraits · Events</b><br>© 2026 — Jam Studio Photography<br>Rahim Yar Khan · Sadiqabad</div>
+  <div class="hero-vignette"></div>
+</header>
+
+<section class="wrap" id="gallery">
+  <div class="sec-head rv"><div><div class="kicker">The Archive</div><h2>Stories, kept<br>in frames.</h2></div>
+  <p>Real celebrations, real people. Filter by the kind of story you want told — then tap any frame to see it full-screen.</p></div>
+  <div class="filters rv" id="filters">
+    <button class="fbtn on" data-filter="all">All Work</button>
+    <button class="fbtn" data-filter="wedding">Weddings</button>
+    <button class="fbtn" data-filter="portrait">Portraits</button>
+    <button class="fbtn" data-filter="event">Events &amp; Family</button>
+    <button class="fbtn" data-filter="editorial">Editorial</button>
+  </div>
+  <div class="archive-grid" id="archiveGrid"></div>
+</section>
+
+<section class="wrap" id="pricing" style="background:var(--bg2)">
+  <div class="sec-head rv"><div><div class="kicker">Pricing</div><h2>Simple, honest<br>booking.</h2></div>
+  <p>Every celebration is different, so Jam Studio prices per story, not per template. Tell us your date — you’ll get an exact quote on WhatsApp.</p></div>
+  <div class="price-grid">
+    <div class="price-card rv"><div class="ic">💍</div><h3>Weddings</h3><p>Full-day wedding coverage — baraat, walima and every in-between moment. Cinematic portraits, family formals and a story that still feels alive in twenty years.</p><div class="from">Request a Quote</div><a class="btn" href="#book" data-service="Wedding Photography">Book on WhatsApp</a></div>
+    <div class="price-card rv"><div class="ic">◉</div><h3>Portraits</h3><p>Studio and outdoor portrait sessions — individuals, couples and families. Directed when you need it, invisible when you don’t.</p><div class="from">Request a Quote</div><a class="btn" href="#book" data-service="Portrait Session">Book on WhatsApp</a></div>
+    <div class="price-card rv"><div class="ic">✦</div><h3>Events &amp; Editorial</h3><p>Birthdays, engagements, corporate events and editorial shoots across Rahim Yar Khan, Sadiqabad and beyond — Lahore, Karachi, Islamabad &amp; Dubai on request.</p><div class="from">Request a Quote</div><a class="btn" href="#book" data-service="Event / Editorial Shoot">Book on WhatsApp</a></div>
+  </div>
+</section>
+
+<section class="wrap" id="book">
+  <div class="book-grid">
+    <div class="book-copy rv"><div class="kicker">Book Jam Studio</div><h2>Your date,<br>held in light.</h2>
+      <p>Fill this in and it opens WhatsApp with everything already written — no forms lost in inboxes, no waiting on email. Jam Studio replies with availability and your exact quote.</p>
+      <div class="steps"><div><b>01</b> Choose your service &amp; date</div><div><b>02</b> Add your name &amp; number</div><div><b>03</b> Send on WhatsApp — done</div></div>
+    </div>
+    <form id="bookForm" class="rv">
+      <label>Photography Service
+        <select id="fService" required><option>Wedding Photography</option><option>Portrait Session</option><option>Event / Editorial Shoot</option><option>Family Session</option><option>Other — tell us below</option></select></label>
+      <div class="frow">
+        <label>Preferred Date<input type="date" id="fDate" required></label>
+        <label>Your Name<input type="text" id="fName" placeholder="e.g. Ayesha Khan" required></label>
+      </div>
+      <div class="frow">
+        <label>Your Phone / WhatsApp<input type="tel" id="fPhone" placeholder="03xx xxxxxxx" required></label>
+        <label>City / Venue<input type="text" id="fCity" placeholder="e.g. Rahim Yar Khan"></label>
+      </div>
+      <label>Booking Details (optional)<textarea id="fDetails" rows="3" placeholder="Event type, guests, locations, anything you dream of…"></textarea></label>
+      <button class="btn" type="submit" style="padding:19px 30px">Send Booking on WhatsApp ↗</button>
+      <p class="form-note">Submitting opens WhatsApp with your booking pre-written. Prefer Instagram? Message <a href="https://www.instagram.com/jam_studio_official.pk/" target="_blank" rel="noopener" style="color:var(--champ)">@jam_studio_official.pk</a> instead.</p>
+    </form>
+  </div>
+</section>
+
+<section class="finale">
+  <div class="kicker rv" style="justify-content:center">Jam Studio Photography</div>
+  <h2 class="rv">Your story deserves<br>to be remembered.</h2>
+  <p class="rv">Let’s create something unforgettable.</p>
+  <div class="row rv">
+    <a class="btn" data-wa data-wa-text="Hi Jam Studio, I'd like to book a session. Please share your availability and a quote." target="_blank" rel="noopener" style="padding:19px 36px">Book Your Session</a>
+    <a class="btn btn-ghost" href="https://www.instagram.com/jam_studio_official.pk/" target="_blank" rel="noopener">Instagram — @jam_studio_official.pk ↗</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Jam Studio Photography — Rahim Yar Khan · Sadiqabad, Pakistan</span>
+  <span><a href="https://www.instagram.com/jam_studio_official.pk/" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp; <a href="#book">WhatsApp Booking</a> &nbsp;·&nbsp; Weddings · Portraits · Events · Editorial</span>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <img id="lbImg" alt="Selected photograph, full view">
+  <div class="lb-cap"><small id="lbCat"></small><strong id="lbTitle"></strong></div>
+  <a class="btn lb-wa" data-wa target="_blank" rel="noopener" id="lbWa">Book a shoot like this ↗</a>
+</div>
+
+<script>
+/* ============================================================
+   ★ CONFIG — edit ONLY here ★
+   WHATSAPP_NUMBER: Jam Studio's real WhatsApp in international
+   format, digits only (e.g. 923001234567). Until it is set, the
+   booking buttons open Instagram DM instead of a wrong number.
+   PHOTOS: replace the src values with Jam Studio's own photos
+   (drop files into /images and use "images/your-photo.jpg").
+   ============================================================ */
+const CONFIG = {
+  WHATSAPP_NUMBER: "", // ← TODO: add Jam Studio WhatsApp number, e.g. "923xxxxxxxxx"
+  INSTAGRAM: "https://www.instagram.com/jam_studio_official.pk/"
+};
+const PHOTOS = [
+ {src:"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85",cat:"wedding",label:"Wedding",title:"Forever, softly"},
+ {src:"https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85",cat:"wedding",label:"Wedding",title:"The in-between"},
+ {src:"https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1000&q=85",cat:"wedding",label:"Wedding",title:"Two, becoming one"},
+ {src:"https://images.unsplash.com/photo-1606216799360-4d9a0c3a5c1f?auto=format&fit=crop&w=1000&q=85",cat:"wedding",label:"Wedding",title:"Hands that promise"},
+ {src:"https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85",cat:"portrait",label:"Portrait",title:"Quiet confidence"},
+ {src:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=85",cat:"portrait",label:"Portrait",title:"Unscripted"},
+ {src:"https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1000&q=85",cat:"portrait",label:"Portrait",title:"Golden hour study"},
+ {src:"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85",cat:"editorial",label:"Editorial",title:"Form & feeling"},
+ {src:"https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=85",cat:"editorial",label:"Editorial",title:"Colour in motion"},
+ {src:"https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85",cat:"event",label:"Events & Family",title:"A room full of joy"},
+ {src:"https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1000&q=85",cat:"event",label:"Events & Family",title:"Held, together"},
+ {src:"https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1000&q=85",cat:"event",label:"Events & Family",title:"Chasing light"},
+ {src:"https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1000&q=85",cat:"event",label:"Events & Family",title:"Night of lights"},
+ {src:"https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?auto=format&fit=crop&w=1000&q=85",cat:"wedding",label:"Wedding",title:"Just married light"},
+ {src:"https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=85",cat:"wedding",label:"Wedding",title:"The bride, radiant"},
+ {src:"https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=1000&q=85",cat:"wedding",label:"Wedding",title:"Vows in bloom"}
+];
+function waLink(text){
+  if(CONFIG.WHATSAPP_NUMBER) return "https://wa.me/"+CONFIG.WHATSAPP_NUMBER+"?text="+encodeURIComponent(text);
+  return CONFIG.INSTAGRAM; // fallback until the real number is added — never a fake number
+}
+document.querySelectorAll("[data-wa]").forEach(a=>{a.href=waLink(a.dataset.waText||"Hi Jam Studio, I'd like to book a photography session.");});
+document.querySelectorAll("[data-service]").forEach(a=>a.addEventListener("click",()=>{document.getElementById("fService").value=a.dataset.service==="Event / Editorial Shoot"?"Event / Editorial Shoot":a.dataset.service;}));
+
+/* ---------- INFINITE CURVED REEL ---------- */
+const zone=document.getElementById("reelZone");
+const N=PHOTOS.length, CARD_W=172, TOTAL=N*CARD_W;
+let cards=[];
+for(let r=0;r<2;r++) PHOTOS.forEach((p,i)=>{
+  const d=document.createElement("div");d.className="reel-card";d.dataset.i=i;
+  d.innerHTML=`<img src="${p.src.replace("w=1000","w=500")}" alt="${p.title} — ${p.label} photography by Jam Studio" loading="${r? "lazy":"eager"}"><span class="rc-tag">${p.label} — ${p.title}</span>`;
+  d.addEventListener("click",()=>{ if(moved>6) return; openLB(p); });
+  zone.appendChild(d);cards.push(d);
+});
+let offset=0, speed=.55, paused=false, hoverI=-1, mx=-999, dragging=false, lastX=0, moved=0;
+const reduceMotion=matchMedia("(prefers-reduced-motion: reduce)").matches; if(reduceMotion) speed=0;
+zone.addEventListener("pointermove",e=>{mx=e.clientX; if(dragging){const dx=e.clientX-lastX;lastX=e.clientX;moved+=Math.abs(dx);offset-=dx;}});
+zone.addEventListener("pointerdown",e=>{dragging=true;lastX=e.clientX;moved=0;zone.setPointerCapture(e.pointerId);});
+zone.addEventListener("pointerup",()=>dragging=false);
+zone.addEventListener("pointerleave",()=>{mx=-999;dragging=false;});
+zone.addEventListener("wheel",e=>{offset+=e.deltaY*.4;},{passive:true});
+const sm=new Array(cards.length).fill(1);
+function frame(){
+  if(!paused && !dragging) offset+=speed;
+  const W=zone.clientWidth, mid=W*.58;
+  cards.forEach((c,k)=>{
+    let x=((k*CARD_W - offset) % (TOTAL*2) + TOTAL*2) % (TOTAL*2);
+    if(x>TOTAL) x-=TOTAL*2; // second copy trails the first for a seamless loop
+    const cx=x+79, d=(cx-mid)/W;               // -~0.6 … +~0.6 across screen
+    const arc=Math.sin(Math.max(-1,Math.min(1,d))*1.15); // curved path
+    const prox=Math.max(0,1-Math.abs(d)*2.4);   // proximity to focal point
+    let target=0.72+prox*.34;
+    const isHover = mx>cx-95 && mx<cx+95 && Math.abs(d)<.55;
+    if(k===hoverI||isHover) target=1.28; else if(Math.abs(d)<.22) target=Math.max(target,1.02);
+    sm[k]+= (target-sm[k])*.09;
+    const s=sm[k];
+    const y=arc*36 + (1-prox)*-8, ry=d*-38, rz=arc*5;
+    const bright=.5+prox*.62+(s>1.1?.12:0);
+    c.style.transform=`translate3d(${x}px,${y}px,${prox*90}px) rotateY(${ry}deg) rotateZ(${rz}deg) scale(${s})`;
+    c.style.filter=`brightness(${bright}) saturate(${.72+prox*.4})`;
+    c.style.zIndex=Math.round(prox*30)+(s>1.1?40:0);
+    c.classList.toggle("hot",s>1.12);
+  });
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+/* lens parallax */
+const lens=document.getElementById("lens");
+addEventListener("pointermove",e=>{
+  const nx=e.clientX/innerWidth-.5, ny=e.clientY/innerHeight-.5;
+  lens.style.transform=`rotate(${nx*4}deg) translate(${nx*-14}px,${ny*-10}px)`;
+},{passive:true});
+
+/* ---------- ARCHIVE ---------- */
+const grid=document.getElementById("archiveGrid");
+const layouts=["a-wide","a-tall","a-third","a-third","a-third","a-half","a-half","a-tall","a-wide","a-third","a-third","a-third","a-half","a-half","a-wide","a-tall"];
+PHOTOS.forEach((p,i)=>{
+  const f=document.createElement("figure");f.className="a-item "+layouts[i%layouts.length];f.dataset.cat=p.cat;
+  f.innerHTML=`<img src="${p.src}" alt="${p.title} — ${p.label} photography" loading="lazy"><figcaption><small>${p.label}</small><strong>${p.title}</strong></figcaption>`;
+  f.addEventListener("click",()=>openLB(p));grid.appendChild(f);
+});
+document.getElementById("filters").addEventListener("click",e=>{
+  const b=e.target.closest(".fbtn");if(!b)return;
+  document.querySelectorAll(".fbtn").forEach(x=>x.classList.toggle("on",x===b));
+  grid.querySelectorAll(".a-item").forEach(it=>{
+    const show=b.dataset.filter==="all"||it.dataset.cat===b.dataset.filter;
+    it.style.display=show?"":"none"; if(show){it.style.opacity=0;requestAnimationFrame(()=>{it.style.transition="opacity .5s";it.style.opacity=1;});}
+  });
+});
+
+/* ---------- LIGHTBOX (pauses reel exactly where it is) ---------- */
+const lb=document.getElementById("lightbox");
+function openLB(p){
+  paused=true;
+  document.getElementById("lbImg").src=p.src.replace("w=1000","w=1600");
+  document.getElementById("lbCat").textContent=p.label+" — Jam Studio Photography";
+  document.getElementById("lbTitle").textContent=p.title;
+  document.getElementById("lbWa").href=waLink(`Hi Jam Studio, I saw "${p.title}" (${p.label}) on your website and I'd like a shoot like this.`);
+  lb.classList.add("open");document.body.style.overflow="hidden";
+}
+function closeLB(){lb.classList.remove("open");document.body.style.overflow="";paused=false;}
+document.getElementById("lbClose").addEventListener("click",closeLB);
+lb.addEventListener("click",e=>{if(e.target===lb)closeLB();});
+addEventListener("keydown",e=>{if(e.key==="Escape")closeLB();});
+
+/* ---------- BOOKING → WHATSAPP ---------- */
+document.getElementById("bookForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const msg=`Hi Jam Studio, I'd like to book a session.%0A%0A• Service: ${encodeURIComponent(v("fService"))}%0A• Preferred date: ${encodeURIComponent(v("fDate"))}%0A• Name: ${encodeURIComponent(v("fName"))}%0A• My WhatsApp: ${encodeURIComponent(v("fPhone"))}${v("fCity")?"%0A• City / Venue: "+encodeURIComponent(v("fCity")):""}${v("fDetails")?"%0A• Details: "+encodeURIComponent(v("fDetails")):""}%0A%0APlease share your availability and a quote. Thank you!`;
+  if(CONFIG.WHATSAPP_NUMBER){ window.open("https://wa.me/"+CONFIG.WHATSAPP_NUMBER+"?text="+msg,"_blank"); }
+  else{ // no number configured yet — copy the message and open Instagram DM
+    navigator.clipboard&&navigator.clipboard.writeText(decodeURIComponent(msg.replaceAll("%0A","\n")));
+    alert("Jam Studio's WhatsApp number isn't added to the site config yet — your booking message has been copied. Opening Instagram so you can paste & send it there.");
+    window.open(CONFIG.INSTAGRAM,"_blank");
+  }
+});
+
+/* ambient toggle + reveal */
+let amb=false;
+document.getElementById("ambientBtn").addEventListener("click",e=>{
+  amb=!amb;document.querySelector(".grid-floor").style.opacity=amb?".95":".55";
+  document.querySelector(".hero").style.background=amb?"radial-gradient(1200px 700px at 78% 42%,#241f16 0%,#0a0a09 55%,#070707 100%)":"";
+  e.currentTarget.textContent=amb?"☾":"☀";
+});
+const io=new IntersectionObserver(es=>es.forEach(en=>en.isIntersecting&&en.target.classList.add("in")),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
